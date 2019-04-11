@@ -1,0 +1,36 @@
+form {
+    text-align: center;
+    margin: auto;
+    padding-top: 250px;
+    width: 25%;
+    height: 25%;
+}
+
+input[type=text] {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+legend {
+    font-size: 35px;
+}
+
+fieldset {
+    border: 0;
+    height: 300px;
+    width: 300px;
+}
+
+input[type=submit] {
+    padding-top: 30px;
+    background-color: #3CBC8D;
+    color: white;
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
