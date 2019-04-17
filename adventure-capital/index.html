@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Adventure Capital</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans:700|Roboto+Mono" rel="main.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Find National Parks By State</h1>
+        <p class="intro-text">Are you trying to plan your next visit to a national park? You've come to the right place! Welcome to Adventure capital, where you can enter as many state codes (e.g. ME, NH, MA) as you want below, and we'll show you useful information about all matching parks, from weather forecasts to hiking and camping directions to a google maps link to get there. Let's find some nature!</p>
+        <form class="form-container">
+            <fieldset>
+                <label for="search-parks"><strong>Enter State Code(s)</strong></label>
+                <input type="text" name="search-parks" id="js-search-parks" placeholder="Example: ME, NH, MA" required>
+
+                <label for="max-results"><strong>Max Results</strong></label>
+                <input type="number" name="max-results" id="js-max-results" value="10">
+            </fieldset> 
+            <input type="submit" value="Go">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        <div id="js-search-results" class="hidden">
+          <h2 class="title">Choose Your Park</h2>
+          <ul id="js-search-results-list">
+          </ul>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
